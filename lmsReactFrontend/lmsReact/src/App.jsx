@@ -20,6 +20,7 @@ import Header from './components/Header';
 import DashboardPage from './pages/DashboardPage';
 import TrainerEnrollmentPage from './TrainerEnrollMgmt/pages/TrainerEnrollmentPage';
 import theme from './theme/theme';
+import ProgramMgmt from './components/programManagement/ProgramMgmt';
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<DashboardPage />} />
           <Route path="/trainer-enrollments" element={<TrainerEnrollmentPage />} />
+          <Route path="/program-Management" element={<ProgramMgmt/>}/>
         </Routes>
       </Router>
     </ThemeProvider>

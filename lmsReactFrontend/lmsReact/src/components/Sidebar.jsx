@@ -141,7 +141,7 @@ export default function Sidebar() {
                     <ListItemText primary="Dashboard" />
                 </ListItemButton>
 
-                <ListItemButton
+               ` <ListItemButton
                     component={NavLink}
                     to="/trainer-enrollments"
                     sx={{
@@ -153,7 +153,22 @@ export default function Sidebar() {
                         <SchoolIcon />
                     </ListItemIcon>
                     <ListItemText primary="Trainer Enrollment" />
+                </ListItemButton>`
+
+                 <ListItemButton
+                    component={NavLink}
+                    to="/program-Management"
+                    sx={{
+                        "&.active": { backgroundColor: "#1e293b" },
+                        "&:hover": { backgroundColor: "#1e293b" },
+                    }}
+                >
+                    <ListItemIcon sx={{ color: "#38bdf8" }}>
+                        <SchoolIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Program  management" />
                 </ListItemButton>
+
             </List>
         </Drawer>
     );
